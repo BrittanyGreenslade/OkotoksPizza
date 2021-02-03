@@ -10,16 +10,32 @@
       body {
         background: #6c8586;
       }
-      #pizzadance {
-        display: block;
-        margin: auto;
-      }
       h1 {
         color: black;
         text-decoration: underline;
         text-align: center;
       }
+      nav {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+      }
+      #pizzadance {
+        display: block;
+        margin: auto;
+        padding-bottom: 2%;
+      }
+      #contact {
+        text-align: center;
+      }
       div {
+        text-align: center;
+      }
+      h2 {
+        text-decoration: underline;
+      }
+      #location {
         text-align: center;
       }
       footer {
@@ -30,14 +46,32 @@
   </head>
   <body>
     <h1>Okotoks Pizza</h1>
+    <nav>
+      <a href="">Menu</a>
+      <a href="./pages/contact.html">Contact Us</a>
+      <a
+        href="https://www.google.com/search?rlz=1C1LENP_enCA599CA601&ei=KE0aYNX6IJar0PEP8bGmgAE&q=high+dough+edmonton&gs_ssp=eJzj4tVP1zc0LMxLKjEzLSw3YLRSNagwNU40MDI2NzRKSjW3sDA1tgIKWSSmGaWlmpkZpRpYArGXcEZmeoZCSn4pkExNyc3PK8nPAwAZeBZL&oq=high+&gs_lcp=CgZwc3ktYWIQAxgAMg0ILhDHARCvARBDEJMCMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgcILhCxAxBDMgQIABBDMgcILhCxAxBDMgcIABCxAxBDOgcIABBHELADOggIABCxAxCDAToLCC4QsQMQxwEQowI6CAguELEDEIMBOgUIABCxAzoLCAAQsQMQgwEQiwM6BAguEENQ7jZYhTpgvEpoA3ACeACAAekBiAHwB5IBBTAuNS4xmAEAoAEBqgEHZ3dzLXdpesgBCLgBAsABAQ&sclient=psy-ab#lrd=0x53a023712be78853:0x58af2fe662e092e0,1,,,"
+        target="_blank"
+        >Reviews</a
+      >
+    </nav>
+    <h4><a href="#ourChefs">The magic behind our tasty pizza!</a></h4>
         <img
       id="pizzadance"
       src="https://media.giphy.com/media/VCDSo9xqCJOjC/giphy.gif"
       alt="Dancing pizza dude logo"
-      width="100px
-    "
+      width="100px"
     />
-        
+    <section id="contact">
+      <button>
+        <a href="mailto:info@okotokspizza.ca" target="_blank"
+          >Email us!</a
+        ></button
+      > 
+      <button>
+        <a href="tel:4035555555">Call to order!</a>
+      </button>
+    </section>
     <div>
             <br />
             <img
@@ -61,11 +95,25 @@
         allowfullscreen
       ></iframe>
             
-      <h2>~Le Chefs~</h2>
+      <h2><a id="ourChefs"></a>~Le Chefs~</h2>
       <img src="./PizzaPics/pizzapic6.jpg" alt="Our Chefs" width="560" />
           
     </div>
         
+    <section id="location">
+      <h3>Come visit us today!</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.0813400084935!2d-113.51468968471069!3d53.520604169346164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023712be78853%3A0x58af2fe662e092e0!2sHigh%20Dough!5e0!3m2!1sen!2sca!4v1612337861878!5m2!1sen!2sca"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+        >High Dough, Edmonton</iframe
+      >
+    </section>
     <footer>
             
       <hr />
