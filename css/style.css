@@ -25,17 +25,35 @@ h4 {
   text-align: center;
   text-decoration: underline;
 }
-#pizzadance {
-  display: block;
-}
-#socialMedia {
-  display: block;
-  margin-left: 80%;
-}
+
 div {
   text-align: center;
 }
-footer {
-  text-align: center;
-  font-weight: 800;
+#hoursTitle {
+  text-decoration: underline;
+  font-weight: bolder;
+  margin: 0%;
+}
+#gridContainer {
+  display: grid;
+  grid-template-columns: 400px 20px 180px 400px 30px;
+  grid-template-rows: 20px 100px 100px 20px;
+  padding-left: 5%;
+}
+/* * There's a tiny white line that I can't figure out how to make go away next to dancing pizza dude? Inspector says it's 'hr' inside of my grid container or something?* Also grid is so hard and I just put a bunch of numbers until it looked kinda how I wanted */
+#gridItem1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#gridItem2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+#gridItem3 {
+  grid-column: 5/6;
+  grid-row: 3;
+  align-self: flex-end;
+}
+.hours {
+  margin: 0%;
 }
