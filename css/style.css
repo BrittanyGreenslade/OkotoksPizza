@@ -29,31 +29,56 @@ h4 {
 div {
   text-align: center;
 }
-#hoursTitle {
-  text-decoration: underline;
-  font-weight: bolder;
-  margin: 0%;
-}
 #gridContainer {
   display: grid;
-  grid-template-columns: 400px 20px 180px 400px 30px;
-  grid-template-rows: 20px 100px 100px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-left: 5%;
-}
-/* * There's a tiny white line that I can't figure out how to make go away next to dancing pizza dude? Inspector says it's 'hr' inside of my grid container or something?* Also grid is so hard and I just put a bunch of numbers until it looked kinda how I wanted */
-#gridItem1 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-#gridItem2 {
-  grid-column: 3/4;
-  grid-row: 2/3;
+  justify-items: center;
+  align-items: center;
 }
 #gridItem3 {
-  grid-column: 5/6;
-  grid-row: 3;
-  align-self: flex-end;
+  justify-self: end;
+  align-self: end;
 }
-.hours {
-  margin: 0%;
+#gridItem1 {
+  justify-self: start;
+  align-self: center;
 }
+h3 + #map {
+  border: 2px solid black;
+}
+article .hours {
+  margin: -2%;
+  font-family: monospace;
+}
+#hoursTitle {
+  text-decoration: underline;
+  font-family: monospace;
+}
+footer > article {
+  border: 1px solid red;
+  padding: 3%;
+}
+a:link {
+  font-weight: bold;
+  color: red;
+}
+a:visited {
+  font-weight: bold;
+  color: yellow;
+}
+.button {
+  background: orange;
+  border-radius: 30%;
+  display: inline;
+  box-shadow: 3px 3px rgb(233, 229, 229);
+  border: 3px solid black;
+  padding: 5px 10px;
+}
+.button:hover {
+  background: grey;
+}
+.button:active {
+  background: hotpink;
+}
+/* def not my real stylistic choices for this project */

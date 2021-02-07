@@ -8,11 +8,12 @@
       content="Locally sourced, farm to table pizza in Okotoks, Alberta"
     />
     <meta name="author" content="Okotoks Pizza Shop" />
+
     <meta
       name="keywords"
       content="Pizza, Fresh, Best, Okotoks, Restaurant, Dine in, Takeout"
     />
-    <!-- How do keywords work with hyphens in them? Does this have an effect on their searchability? -->
+
     <meta property="og:url" content="#" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="New Pizza Shop in Okotoks!" />
@@ -23,7 +24,7 @@
     <meta property="og:image" content="./images/pizzapic6" />
     <meta name="twitter:card" content="./images/pizzapic6" />
     <meta name="twitter:site" content="@okotokspizza" />
-    <!-- Dumb question, but we can't actually see these anywhere right now, right? -->
+
     <title>Okotoks Pizza</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -33,11 +34,12 @@
       <nav>
         <a href="">Home</a>
         <a href="/pages/foodmenu.html">Menu</a>
-        <a href="">Reservations</a>
+        <a href="./pages/reservations.html">Reservations</a>
         <a href="./pages/contact.html">Location/Contact</a>
-        <a href="">Checkout</a>
+        <a href="./pages/checkout.html">Checkout</a>
       </nav>
       <h1>Okotoks Pizza</h1>
+      <p class="button">Order now!</p>
     </header>
 
     <article>
@@ -74,20 +76,20 @@
     </article>
 
     <section id="media">
-            <br />
-            <img
+      <br />
+      <img
         src="./images/pizzapic1.jpg"
         width="600px"
         height="600px"
         alt="Aliens and pizza"
       />
-            <img
+      <img
         src="./images/pizzapic1.jpg"
         width="600px"
         height="600px"
         alt="Aliens and pizza"
       />
-            <iframe
+      <iframe
         width="560"
         height="315"
         src="https://www.youtube.com/embed/mssJzbv4KFE"
@@ -98,15 +100,14 @@
       <h3>~Le Chefs~</h3>
       <img src="./images/pizzapic6.jpg" alt="Our Chefs" width="560" />
     </section>
-        
     <div id="Location">
       <h3>Come visit us today!</h3>
       <iframe
+        id="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.0813400084935!2d-113.51468968471069!3d53.520604169346164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023712be78853%3A0x58af2fe662e092e0!2sHigh%20Dough!5e0!3m2!1sen!2sca!4v1612337861878!5m2!1sen!2sca"
         width="600"
         height="450"
         frameborder="0"
-        style="border: 0"
         allowfullscreen=""
         aria-hidden="false"
         tabindex="0"
@@ -115,15 +116,13 @@
     </div>
 
     <footer id="gridContainer">
-      <hr />
-            <img
+      <img
         id="gridItem1"
-        id="pizzadance"
         src="https://media.giphy.com/media/VCDSo9xqCJOjC/giphy.gif"
         alt="Dancing Pizza Logo"
         width="100px"
       />
-      <!-- gonna eventuallygit add get pizza dude on the left, hours in the middle, and social media stuff on the right? I'll check out grid/table stuff. -->
+
       <article id="gridItem2">
         <p id="hoursTitle">Restaurant hours</p>
         <p class="hours">M 12 pm - 11 pm</p>
@@ -136,7 +135,6 @@
       </article>
       <img
         id="gridItem3"
-        id="socialMedia"
         src="./images/socialMedia.jpg"
         alt="Social Media Links"
       />
