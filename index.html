@@ -11,7 +11,7 @@
 
     <meta
       name="keywords"
-      content="Pizza, Fresh, Best, Okotoks, Restaurant, Dine in, Takeout"
+      content="Pizza, Fresh, Best in town, Okotoks, Restaurant, Dine in, Takeout"
     />
 
     <meta property="og:url" content="#" />
@@ -30,54 +30,26 @@
   </head>
   <body>
     <header>
-      <h3>**Try our new XYZ for takeout** (changing ad)</h3>
-      <nav>
-        <a href="">Home</a>
-        <a href="/pages/foodmenu.html">Menu</a>
-        <a href="./pages/reservations.html">Reservations</a>
-        <a href="./pages/contact.html">Location/Contact</a>
-        <a href="./pages/checkout.html">Checkout</a>
-      </nav>
-      <h1>Okotoks Pizza</h1>
-      <p class="button">Order now!</p>
+      <h3 id="rotatingAd">**Try our new XYZ for takeout** (changing ad)</h3>
+      <div id="h1AndLinks">
+        <h1>Okotoks Pizza</h1>
+        <nav id="headerLinks">
+          <a href="">Home</a>
+          <a href="/pages/foodmenu.html">Menu</a>
+          <a href="./pages/reservations.html">Reservations</a>
+          <a href="./pages/contact.html">Location/Contact</a>
+          <a href="./pages/checkout.html">Checkout</a>
+        </nav>
+      </div>
     </header>
-
-    <article>
-      <p>
-        There are no short cuts when it comes to our passion. We pull out all
-        the stops, giving you the ‘wow’ flavour, experience and consistency you
-        not only want, but deserve. Our customers keep coming back, again,
-        again, and again.
-      </p>
-      <p>
-        We’re a small but nimble family-run take out and delivery pizza shop in
-        Okotoks, Alberta. When we’re not scouring the globe (okay, the prairies)
-        for the freshest, ripest and boldest ingredients, we’re crafting perfect
-        pizzas for you and your family to enjoy. From hot Hawaiians and classic
-        Canadians to crispy wings and decadent fudge brownies, everything at
-        Okotoks Pizza is baked with love.
-      </p>
-      <p>
-        After watching his parents run a very successful pizza business in
-        Calgary, Matt Cleveland learned how to make people happy, one topping at
-        a time. Opening the doors to Okotoks Pizza in 2004, Matt has managed to
-        evolve the fresh, traditional Greek-style pizza his family perfected
-        back in the mid 80s to a more modern and convenient comfort food for
-        today’s family on the go.
-      </p>
-      <p>
-        Okotoks Pizzas are made with only the freshest ingredients like
-        mozzarella, roma tomatoes, made-from-scratch sauce and even features
-        premium toppings like Sorriso Pepperoni, salami from Valbella meats and
-        a healthy Flax crust. You feel good about ordering it. You feel good
-        about eating it. And you feel even better knowing we're always ready to
-        make you more.
-      </p>
-    </article>
-
-    <section id="media">
+    <main>
       <br />
-      <img
+      <article id="sloganAndButtons">
+        <h1 id="slogan">A Pizza by Any Other Name....</h1>
+        <p class="button">Explore our menu</p>
+        <p class="button">Call to order takeout</p>
+      </article>
+      <!-- <article id="alienPics">      <img
         src="./images/pizzapic1.jpg"
         width="600px"
         height="600px"
@@ -89,41 +61,50 @@
         height="600px"
         alt="Aliens and pizza"
       />
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/mssJzbv4KFE"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <h3>~Le Chefs~</h3>
-      <img src="./images/pizzapic6.jpg" alt="Our Chefs" width="560" />
-    </section>
-    <div id="Location">
-      <h3>Come visit us today!</h3>
-      <iframe
-        id="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.0813400084935!2d-113.51468968471069!3d53.520604169346164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023712be78853%3A0x58af2fe662e092e0!2sHigh%20Dough!5e0!3m2!1sen!2sca!4v1612337861878!5m2!1sen!2sca"
-        width="600"
-        height="450"
-        frameborder="0"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-        >High Dough, Edmonton</iframe
-      >
-    </div>
+      </article> -->
+      <section id="media">
+        <article id="deepPizzaVid">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/mssJzbv4KFE"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </article>
+        <article id="leChefsPicAndHeader">
+          <p class="pictureHeaders">~Le Chefs~</p>
+          <img src="./images/pizzapic6.jpg" alt="Our Chefs" width="560" />
+        </article>
+      </section>
+      <section id="location">
+        <p class="pictureHeaders">Come visit us today!</p>
+        <iframe
+          id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.0813400084935!2d-113.51468968471069!3d53.520604169346164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023712be78853%3A0x58af2fe662e092e0!2sHigh%20Dough!5e0!3m2!1sen!2sca!4v1612337861878!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          frameborder="0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          >High Dough, Edmonton</iframe
+        >
+      </section>
+    </main>
+    <footer id="footerGrid">
+      <article id="footerGridItem1">
+        <img
+          src="https://media.giphy.com/media/VCDSo9xqCJOjC/giphy.gif"
+          alt="Dancing Pizza Logo"
+          width="100px"
+        />
+        <h2 id="h2Footer">Okotoks Pizza</h2>
+      </article>
 
-    <footer id="gridContainer">
-      <img
-        id="gridItem1"
-        src="https://media.giphy.com/media/VCDSo9xqCJOjC/giphy.gif"
-        alt="Dancing Pizza Logo"
-        width="100px"
-      />
-
-      <article id="gridItem2">
+      <article id="footerGridItem2">
         <p id="hoursTitle">Restaurant hours</p>
         <p class="hours">M 12 pm - 11 pm</p>
         <p class="hours">T 12 pm - 11 pm</p>
@@ -134,10 +115,11 @@
         <p class="hours">Sun 12 pm - 11 pm</p>
       </article>
       <img
-        id="gridItem3"
+        id="footerGridItem3"
         src="./images/socialMedia.jpg"
         alt="Social Media Links"
       />
     </footer>
+    <!-- def don't like the look of a footer on my homepage with this particular design-->
   </body>
 </html>

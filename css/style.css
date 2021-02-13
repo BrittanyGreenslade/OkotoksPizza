@@ -1,84 +1,120 @@
 body {
-  background-color: #6c8586;
+  background-color: #37393a;
+  margin: 0px;
+  /* width: 100%; */
 }
-h3 {
-  text-align: center;
+#rotatingAd {
+  background: #a62927;
   color: black;
-}
-nav {
-  display: block;
-  text-align: right;
-}
-h1 {
-  color: black;
-  font-size: 50px;
-}
-article {
-  font-size: 20px;
-}
-#media {
-  display: block;
-  margin: auto;
+  font-size: 30px;
+  height: 50px;
   text-align: center;
+  margin-top: 0px;
+  padding-top: 10px;
+  width: 100%;
 }
-h4 {
+#h1AndLinks {
   text-align: center;
-  text-decoration: underline;
-}
-
-div {
-  text-align: center;
-}
-#gridContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 5%;
-  justify-items: center;
+  padding-left: 5px;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
-#gridItem3 {
-  justify-self: end;
-  align-self: end;
-}
-#gridItem1 {
+h1 {
+  color: #e7bc4e;
+  font-size: 50px;
   justify-self: start;
-  align-self: center;
 }
-h3 + #map {
-  border: 2px solid black;
+#headerLinks {
+  padding-top: 2%;
+  padding-right: 2%;
+  justify-self: right;
+  /* text-decoration: none; Can you  remove the underline of links? */
 }
-article .hours {
-  margin: -2%;
+a:link {
+  color: white;
+  font-weight: bold;
+}
+a:visited {
+  color: #a62927;
+  font-weight: bold;
+}
+#slogan {
+  color: white;
+  font-size: 35px;
+}
+#sloganAndButtons {
+  margin-left: 45%;
+}
+.button {
+  background: #a62927;
+  border-radius: 45px;
+  box-shadow: 2px 2px #323536;
+  font-size: 25px;
+  font-weight: bold;
+  height: 50px;
+  margin-left: 1%;
+  padding-top: 20px;
+  text-align: center;
+  width: 300px;
+}
+/* Can you justify text in the center of a button? */
+.button:hover {
+  background: #e7bc4e;
+}
+.button:active {
+  background: #f8b407;
+}
+#media {
+  text-align: center;
+}
+#deepPizzaVid {
+  padding: 0px 10px;
+}
+#location {
+  text-align: center;
+}
+.pictureHeaders {
+  font-size: 1.17em;
+  font-weight: bold;
+  text-align: center;
+}
+#hoursTitle .hours {
   font-family: monospace;
 }
 #hoursTitle {
   text-decoration: underline;
+  margin-bottom: -2%;
+}
+.hours {
+  margin: -1%;
   font-family: monospace;
+  font-size: 20px;
 }
-footer > article {
-  border: 1px solid red;
-  padding: 3%;
+
+#footerGrid {
+  background: #a62927;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
-a:link {
-  font-weight: bold;
-  color: red;
+#footerGridItem1 {
+  justify-self: start;
+  align-self: center;
+  padding-top: 15%;
 }
-a:visited {
-  font-weight: bold;
-  color: yellow;
-}
-.button {
-  background: orange;
-  border-radius: 30%;
+#h2Footer {
   display: inline;
-  box-shadow: 3px 3px rgb(233, 229, 229);
-  border: 3px solid black;
-  padding: 5px 10px;
+  align-self: center;
 }
-.button:hover {
-  background: grey;
+#footerGridItem2 {
+  justify-self: center;
+  align-self: center;
 }
-.button:active {
-  background: hotpink;
+#footerGridItem3 {
+  justify-self: end;
+  align-self: end;
 }
-/* def not my real stylistic choices for this project */
