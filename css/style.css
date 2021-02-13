@@ -3,6 +3,15 @@ body {
   margin: 0px;
   /* width: 100%; */
 }
+@keyframes rotatingAd {
+  50% {
+    text-align: left;
+  }
+  100% {
+    text-align: right;
+  }
+}
+/* I hate that this stops in the center of the animation how do I make it stop but still keep my text-align: centred in its natural state? Or can I? I remember this happening in the rainbow example*/
 #rotatingAd {
   background: #a62927;
   color: black;
@@ -12,6 +21,12 @@ body {
   margin-top: 0px;
   padding-top: 10px;
   width: 100%;
+}
+#rotatingAd:hover {
+  animation-name: rotatingAd;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 #h1AndLinks {
   text-align: center;
@@ -35,6 +50,15 @@ h1 {
 a:link {
   color: white;
   font-weight: bold;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+a:hover {
+  color: #f8b407;
+}
+a:visited:hover {
+  color: #f8b407;
 }
 a:visited {
   color: #a62927;
@@ -57,11 +81,15 @@ a:visited {
   margin-left: 1%;
   padding-top: 20px;
   text-align: center;
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
   width: 300px;
 }
 /* Can you justify text in the center of a button? */
 .button:hover {
   background: #e7bc4e;
+  width: 350px;
 }
 .button:active {
   background: #f8b407;
