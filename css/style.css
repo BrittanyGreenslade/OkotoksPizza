@@ -1,16 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: #37393a;
   margin: 0px;
-  /* width: 100%; */
 }
-@keyframes rotatingAd {
+/* @keyframes rotatingAd {
   50% {
     text-align: left;
   }
   100% {
     text-align: right;
   }
-}
+} */
 /* I hate that this stops in the center of the animation how do I make it stop but still keep my text-align: centred in its natural state? Or can I? I remember this happening in the rainbow example*/
 #rotatingAd {
   background: #a62927;
@@ -18,16 +21,15 @@ body {
   font-size: 30px;
   height: 50px;
   text-align: center;
-  margin-top: 0px;
   padding-top: 10px;
-  width: 100%;
+  width: 100vw;
 }
-#rotatingAd:hover {
+/* #rotatingAd:hover {
   animation-name: rotatingAd;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-}
+} */
 #h1AndLinks {
   text-align: center;
   display: grid;
