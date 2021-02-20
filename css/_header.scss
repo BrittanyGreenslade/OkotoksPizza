@@ -1,0 +1,41 @@
+@mixin centerGrid($jus, $ali) {
+  display: grid;
+  justify-items: ($jus);
+  align-items: ($ali);
+}
+#rotatingAd {
+  @include centerGrid(center, center);
+  background: #a62927;
+  color: black;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100vw;
+}
+#h1AndLinks {
+  @include centerGrid(start, center);
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+#shopName {
+  color: #e7bc4e;
+  font-size: 35px;
+  justify-self: start;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#hammyMenu {
+  display: grid;
+  grid-auto-flow: row;
+  justify-self: end;
+  padding-right: 10px;
+  margin-top: 2px;
+}
+.hamburgerMenu {
+  width: 30px;
+  height: 2.5px;
+  background-color: white;
+  margin: 4px 0;
+}

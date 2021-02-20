@@ -1,52 +1,7 @@
-#rotatingAd {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  background: #a62927;
-  color: black;
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100vw;
-}
+// I'm mid-redo of my site so it's a wreck right now, plz ignore.
 
-#h1AndLinks {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  margin-top: 20px;
-}
-
-#shopName {
-  color: #e7bc4e;
-  font-size: 35px;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  padding-left: 10px;
-  padding-top: 5px;
-}
-
-#hammyMenu {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  padding-right: 10px;
-  margin-top: 2px;
-}
-
-.hamburgerMenu {
-  width: 30px;
-  height: 2.5px;
-  background-color: white;
-  margin: 4px 0;
-}
+@import "_header.scss";
+@import "_footer.scss";
 
 * {
   padding: 0;
@@ -56,6 +11,7 @@
 body {
   background-color: #37393a;
 }
+$ctr: center;
 
 #slogan {
   color: white;
@@ -64,69 +20,54 @@ body {
   text-align: left;
   margin-top: -10px;
 }
-
 #sloganAndButtons {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 2fr;
-      grid-template-rows: 1fr 2fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
+  grid-template-rows: 1fr 2fr;
+  align-items: $ctr;
+  justify-items: $ctr;
 }
-
 #buttons {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-bottom: 20px;
-}
-
-#buttons .button {
-  background: #a62927;
-  border-radius: 45px;
-  -webkit-box-shadow: 2px 2px #323536;
-          box-shadow: 2px 2px #323536;
-  font-size: 20px;
-  font-weight: bold;
-  height: 40px;
-  margin-top: 15px;
-  padding-top: 15px;
-  text-align: center;
-  width: 200px;
+  .button {
+    background: #a62927;
+    border-radius: 45px;
+    box-shadow: 2px 2px #323536;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 15px;
+    padding-top: 15px;
+    text-align: $ctr;
+    width: 200px;
+  }
 }
 
 #logo {
   width: 300px;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 150px;
   display: block;
   margin: 5px auto;
   padding-top: 10px;
   padding-bottom: 20px;
 }
-
 #hours #h2Hours,
 #h3Hours,
 .pHours {
   font-family: monospace;
   color: white;
-  text-align: center;
+  text-align: $ctr;
 }
-
 #h2Hours {
   font-weight: bold;
   font-size: 30px;
 }
-
 #h3Hours {
   padding-bottom: 10px;
 }
-
 #h3Hours ~ p {
   font-size: 15px;
 }
@@ -137,10 +78,8 @@ body {
   width: 100%;
   max-width: 500px;
   height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 /* .pictureHeaders {
   font-size: 1.17em;
   font-weight: bold;
@@ -153,6 +92,8 @@ body {
   text-decoration: underline;
   margin-bottom: -2%;
 } */
+
+
 /* @media only screen and (min-width:1000px){
   #rotatingAd:hover {
   animation-name: rotatingAd;
@@ -238,4 +179,3 @@ I hate that this stops in the center of the animation how do I make it stop but 
   font-family: monospace;
   font-size: 20px;
 }*/
-/*# sourceMappingURL=style.css.map */

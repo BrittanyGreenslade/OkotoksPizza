@@ -1,0 +1,25 @@
+#footerGrid {
+  background: #a62927;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: $ctr;
+  align-items: $ctr;
+}
+#footerGridItem1 {
+  justify-self: start;
+  align-self: $ctr;
+  padding-top: 15%;
+}
+#h2Footer {
+  display: inline;
+  align-self: $ctr;
+}
+#footerGridItem2 {
+  justify-self: $ctr;
+  align-self: $ctr;
+}
+#footerGridItem3 {
+  justify-self: end;
+  align-self: end;
+}
